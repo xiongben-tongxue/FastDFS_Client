@@ -40,7 +40,7 @@ public interface Connection {
      * @return
      * @throws IOException
      */
-    public OutputStream getOutputStream() throws IOException;
+    OutputStream getOutputStream() throws IOException;
 
     /**
      * 获取输入流
@@ -48,13 +48,13 @@ public interface Connection {
      * @return 输入流
      * @throws IOException 获取输入流错误
      */
-    public InputStream getInputStream() throws IOException;
+    InputStream getInputStream() throws IOException;
 
     /**
      * 获取字符集
      * 
      * @return 字符集
      */
-    public Charset getCharset();
+    Charset getCharset();
 
 }
